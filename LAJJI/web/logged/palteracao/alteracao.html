@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/logged.css">
+    <link rel="stylesheet" href="alteracao.css">
+    <title>LAJJI | Alteração</title>
+</head>
+<body>
+
+<div class="nav-side-menu">
+    <div class="area">
+    </div>
+    <nav class="main-menu">
+            <ul>
+                <li class="main-menu-title">
+                    <p>LAJJI</p>
+                </li>
+                <li>
+                    <a href="../logged.html">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                            Dashboard
+                        </span>
+                    </a>
+                  
+                </li>
+                <li class="has-subnav">
+                    <a href="../../SConsultarProduto">
+                        <i class="fa fa-laptop fa-2x"></i>
+                        <span class="nav-text">
+                            Consultar
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="../pcadastro/cadastro.html">
+                       <i class="fa fa-list fa-2x"></i>
+                        <span class="nav-text">
+                            Cadastro
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="../palteracao/alteracao.html">
+                       <i class="fa fa-folder-open fa-2x"></i>
+                        <span class="nav-text">
+                            Alteração
+                        </span>
+                    </a>
+                   
+                </li>
+                <li>
+                    <a href="../../SRemocaoProduto">
+                        <i class="fa fa-trash-o fa-2x"></i>
+                        <span class="nav-text">
+                            Remoção
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="logout">
+                <li>
+                   <a href="../../SLogout">
+                         <i class="fa fa-power-off fa-2x"></i>
+                        <span class="nav-text">
+                            Logout
+                        </span>
+                    </a>
+                </li>  
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="container">
+        <section class="image-top">
+            <div class="image">
+                <img src="../assets/image/undraw_new_notifications_re_xpcv (1).svg" alt="">
+            </div>
+            <form name="f1" action="../../ProdutoControlador" method="POST" class="form" onsubmit="return validaDados()">
+                <!-- Cabeçalho -->
+                <header class="form-header">
+                    <h1>Alteração</h1>
+                </header>
+                <!-- inputs -->
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Código</label>
+                        <input id="idCodigo" type="text" name="txtCodigo" placeholder="Código do produto" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="rg">Descrição</label>
+                        <input id="idDescricao" type="text" name="txtDescricao" placeholder="Descrição do produto" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="tel">Marca</label>
+                        <input id="idMarca" type="text" name="txtMarca" placeholder="Marca" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="cpf">Preço Unitário</label>
+                        <input id="idPrecoUnitario" type="text" name="txtPrecoUnitario" placeholder="Preço de cada unidade" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="date">Preço de Compra</label>
+                        <input id="idPrecoCompra" type="text" name="txtPrecoCompra" placeholder="Preço" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="endereco">Quantidade</label>
+                        <input id="idQuantidade" type="text" name="txtQuantidade" placeholder="Quantidade" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Quantidade Mínima</label>
+                        <input id="idQuantidadeMinima" type="text" name="txtQuantidadeMinima" placeholder="Quantidade minima" required>
+                    </div>
+                </div>
+                <!-- Botão continuar -->
+                <div class="continue-button">
+                    <input id="idBotao" type="submit" name="b1" value="Alterar">
+                </div>
+            </form>
+        </section>
+    </div>
+
+ <script src="../assets/logged.js"></script>
+</body>
+</html>

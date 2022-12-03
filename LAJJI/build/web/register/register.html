@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="assets/css/register.css">
+    <title>Registre-se</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <!-- header -->
+        <header class="header">
+            <div class="header-tittle">
+                <a href="../index.html">
+                    LAJJI
+                </a>
+            </div>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="../login/login.html">Login</a></li>
+                    <li><a href="../register/register.html">Registre-se</a></li>
+                    <li><a href="../index.html">Serviços</a></li>
+                    <li><a href="../index.html">Sobre nós</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- top -->
+        <section class="image-top">
+
+            <div class="image">
+                <img src="assets/image/undraw_logistics_x-4-dc (1).svg"  width="530px"  alt="">
+            </div>
+            <form name="f1" class="form" method="POST" action="../FuncionarioControlador" onsubmit="return validaDados()">
+
+                <!-- Cabeçalho -->
+                <header class="form-header">
+                    <h1>Registre-se</h1>
+                </header>
+
+                <!-- inputs --> 
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nome completo</label>
+                        <input id="idNome" type="text" name="txtNome" placeholder="Digite nome completo" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="rg">N° do RG</label>
+                        <input id="idRG" type="text" name="txtRG" placeholder="Digite seu RG" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="tel">Telefone</label>
+                        <input id="idTelefone" type="tel" name="txtTelefone" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="cpf">CPF</label>
+                        <input id="idCPF" type="text" name="txtCPF" placeholder="xxx-xxx-xxx-xx" required>
+                    </div>
+                    <div class="input-box date">
+                        <label for="date">Data de nascimento</label>
+                        <input id="idData" type="date" name="txtData" placeholder="Digite sua data de nascimento" required >
+                    </div>
+                    <div class="input-box">
+                        <label for="endereco">Endereço</label>
+                        <input id="idEndereco" type="text" name="txtEndereco" placeholder="Digite seu endereço" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="idEmail" type="email" name="txtEmail" placeholder="Digite seu email" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="idSenha" type="password" name="txtSenha" placeholder="Digite sua senha" required>
+                    </div>
+                </div>
+
+                <!-- Botão continuar -->
+                <div class="continue-button">
+                    <input type="submit" value="Continuar" name="b1">
+                </div>
+            </form>
+
+        </section>
+
+        <!-- footer-->
+        <footer class="footer" id="contato">
+            <div class="footer-flex">
+                <div class="footer-contact">
+                    <h1>Lajji</h1>
+                    <p>Quer ver como o <b>LAJJI</b> pode te ajudar na prática a melhorar a gestão da sua empresa? Faça o registro em nosso site para que podemos agendar uma demonstração com um dos nossos consultores.</p>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Registre-se</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h2>Social</h2>
+                    <a href="#">
+                        <img src="assets/image/001-instagram.png" alt="">
+                        <img src="assets/image/003-linkedin.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <p>Copyright © 2022 - LAJJI. All Rights Reserved. Design and Developer team LAJJI.</p>
+        </footer>
+
+    </div>
+    
+    <script src="assets/scripts/index.js"></script>
+
+</body>
+</html>

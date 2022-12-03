@@ -1,0 +1,257 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #EAEBED;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    height: auto;
+}
+
+/* header */
+
+.header {
+    background-color: #536DFE;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    box-shadow: 0px 10px 10px #0000003b;
+    position: fixed;
+    width: 100%;
+    
+}
+
+.header li a {
+    color: #B1B0AE;
+    font-size: 17px;
+    font-weight: bold;
+    
+}
+
+.header-tittle{
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bold;
+    margin: 0.5rem 2rem;
+    font-size: 30px;
+    color:#B1B0AE;
+}
+
+.header-tittle a{
+    color:#B1B0AE;
+}
+
+.header-nav ul {
+    display: flex;
+    margin: 0.8rem 2rem;
+}
+
+.header-nav ul li {
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.header-nav ul li a:hover {
+    color: white;
+    transition: ease-in .3s;
+}
+
+/* top */
+
+.image {
+    display: flex;
+    margin: 5rem;
+}
+
+.image-top {
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+    margin-bottom: 150px;
+    gap: 100px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+    background-color: #DEDEEF;
+    margin-top: 3rem;
+    height: 35rem;
+    border-radius: 20px;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.189);
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-header h1 {
+    color: rgba(0, 0, 0, 0.592);
+    font-weight: bold;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 9rem;
+    height: 0.3rem;
+    background-color: #FE7062;
+    margin: 0.3rem auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+    width: 50%;
+    font-size: 10px;
+}
+
+.input-box input {
+    margin: 0.6rem;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+    
+}
+
+.date input{
+    padding: 0.8rem 3.2rem;
+}
+
+.input-box input:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #536DFE;
+}
+
+.input-box label, .gender-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+.continue-button input {
+    margin-top: 1;
+    border: none;
+    background-color: #FE7062;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.continue-button input:hover {
+    background-color: #6178ff;
+}
+
+/* contact */
+
+.footer {
+    background-color:#FE7062;
+    font-size: 0.8rem;
+    width: 100%;
+    margin: auto;
+}
+
+.footer-flex {
+    display: flex;
+    text-transform: uppercase;
+    gap: 100px;
+    padding-top: 1rem;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.footer-contact {
+    text-align: center;
+    width: 30%;
+}
+
+.footer p {
+    margin: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: none;
+    font-size: 15px;
+}
+
+.footer-nav {
+    align-self: center;
+}
+
+.footer-nav a {
+    color: black;
+}
+
+.footer-nav a:hover {
+    color: rgba(0, 0, 0, 0.766);
+    text-decoration: underline;
+}
+
+.footer-social {
+    align-self: center;
+}
+
+.footer-social h2 {
+    padding-bottom: 0.5rem;
+}
+
+
+
+
+
+
+
